@@ -1,41 +1,17 @@
-import { Meta } from '@/components/elements';
-import { Main } from '@/components/layouts';
-import {
-  CallToAction,
-  Faqs,
-  Hero,
-  Pricing,
-  PrimaryFeatures,
-  SecondaryFeatures,
-  Testimonials,
-} from '@/components/sections';
+import { H1 } from '@/components/elements/Typography';
 
 import type { NextPageWithLayout } from './_app';
 
 const Home: NextPageWithLayout = () => {
   return (
-    <>
-      <Hero />
-      <PrimaryFeatures />
-      <SecondaryFeatures />
-      <CallToAction />
-      <Testimonials />
-      <Pricing />
-      <Faqs />
-    </>
+    <div>
+      <H1 variant="h1">YOOO</H1>
+    </div>
   );
 };
 
 Home.getLayout = (page) => {
-  return (
-    <>
-      <Meta
-        title="Next.js Boilerplate Presentation"
-        description="Next js Boilerplate is the perfect starter code for your project. Build your React application with the Next.js framework."
-      />
-      <Main>{page}</Main>
-    </>
-  );
+  return <>{page}</>;
 };
 
 export default Home;

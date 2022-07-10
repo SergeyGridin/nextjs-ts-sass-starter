@@ -7,10 +7,7 @@ class MyDocument extends Document {
   // eslint-disable-next-line class-methods-use-this
   render() {
     return (
-      <Html
-        className="h-full scroll-smooth  bg-white antialiased [font-feature-settings:'ss01']"
-        lang={AppConfig.locale}
-      >
+      <Html lang={AppConfig.locale}>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -23,7 +20,7 @@ class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend:wght@400;500&display=swap"
           />
         </Head>
-        <body className="flex h-full flex-col">
+        <body>
           <Main />
           <NextScript />
         </body>

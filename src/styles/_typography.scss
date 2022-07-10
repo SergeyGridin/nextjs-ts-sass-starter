@@ -1,0 +1,33 @@
+/* PPNeueMontreal 200 normal */
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 200;
+  src: local(""), url("../../public/assets/fonts/PPNeueMontreal-Thin.otf") format("otf");
+}
+
+/* PPNeueMontreal 400 normal */
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../../public/assets/fonts/PPNeueMontreal-Book.otf") format("otf");
+}
+
+/* PPNeueMontreal 600 normal */
+@font-face {
+  font-family: "PPNeueMontreal";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../../public/assets/fonts/PPNeueMontreal-Medium.otf") format("otf");
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-size: 1rem;
+  font-family: PP Neue Montreal, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell,
+    Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}

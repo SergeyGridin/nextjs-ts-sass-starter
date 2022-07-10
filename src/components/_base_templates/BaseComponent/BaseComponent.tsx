@@ -1,3 +1,5 @@
+import styles from 'BaseComponent.module.scss';
+import clsx from 'clsx';
 import type { ReactNode } from 'react';
 
 export type BaseTemplateProps = {
@@ -7,7 +9,9 @@ export type BaseTemplateProps = {
 };
 
 const BaseTemplate = ({ className, sampleTextProp }: BaseTemplateProps) => {
-  return <div className={className}>{sampleTextProp}</div>;
+  return (
+    <div className={clsx(styles.container, className)}>{sampleTextProp}</div>
+  );
 };
 
-export { BaseTemplate };
+export default BaseTemplate;
